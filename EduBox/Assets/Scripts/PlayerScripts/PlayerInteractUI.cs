@@ -6,13 +6,21 @@ using TMPro;
 public class PlayerInteractUI : MonoBehaviour
 {
     [SerializeField] private GameObject containerGameObject;
-    [SerializeField] private DialogueTrigger dialogueTrigger;
+    //[SerializeField] private DialogueTrigger dialogueTrigger;
     [SerializeField] private TextMeshProUGUI interactTextMeshProUGUI;
+    
+    private GameObject playerGameObject;
+    private DialogueTrigger _dialogueTrigger;
+    void Start()
+    {
+        playerGameObject = GameObject.Find("Player");
+        _dialogueTrigger = playerGameObject.GetComponent<DialogueTrigger>();
+    }
     private void Update()
     {
-        if (dialogueTrigger.GetInteractableObject() != null)
+        if (_dialogueTrigger.GetInteractableObject() != null)
         {
-            Show(dialogueTrigger.GetInteractableObject());
+            Show(_dialogueTrigger.GetInteractableObject());
         }
         else
         {

@@ -11,12 +11,6 @@ using Slider = UnityEngine.UI.Slider;
 
 public class PlayerController : MonoBehaviour
 {
-    void Start()
-    {
-        //UnityEngine.Cursor.visible = false;
-        //UnityEngine.Cursor.lockState = CursorLockMode.Locked;
-    }
-    
     public CharacterController controller;
     
     public float speed;
@@ -28,6 +22,15 @@ public class PlayerController : MonoBehaviour
     public float gravity = -10;
     public float jumpHeight = 2;
     private Vector3 velocity;
+
+    // private GameObject dialogueManagerGameObject;
+    // private DialogueManager _dialogueManager;
+
+    // void Start()
+    // {
+    //     dialogueManagerGameObject = GameObject.Find("DialogueManager");
+    //     _dialogueManager = dialogueManagerGameObject.GetComponent<DialogueManager>();
+    // }
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -48,10 +51,10 @@ public class PlayerController : MonoBehaviour
 
     public void movePlayer()
     {
-        if (DialogueManager.GetInstance().dialogueIsPlaying)
-        {
-            return;
-        }
+        // if (DialogueManager.GetInstance().dialogueIsPlaying)
+        // {
+        //     return;
+        // }
         Vector3 direction = new Vector3(move.x, 0f, move.y).normalized;
         Vector3 movement = new Vector3(move.x, 0f, move.y);
 

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 0f5b9356a08c14245b2a3df73ce98483
   - enabled: 1
+    path: Assets/Scenes/GlobalGameplay.unity
+    guid: 54ae8668e262f18419a44be3d98d7086
+  - enabled: 1
     path: Assets/Scenes/BedroomScene.unity
     guid: 1f37eff21f4f557429319faaf588e888
   - enabled: 1
