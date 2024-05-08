@@ -9,7 +9,7 @@ public class PauseGame : MonoBehaviour
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject mainPanel;
     [SerializeField] private GameObject settingsScene;
-    [SerializeField] private GameObject menuScene;
+    [SerializeField] private SceneField menuScene;
 
     public static bool gameIsPaused = false;
     // Start is called before the first frame update
@@ -57,6 +57,6 @@ public class PauseGame : MonoBehaviour
 
     public void LoadMenu()
     {
-        SceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene(menuScene);
     }
 }

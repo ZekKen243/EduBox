@@ -78,6 +78,16 @@ public class MainMenuManager : MonoBehaviour
                     Debug.Log("Button pressed!");
                     SceneManager.LoadScene("BedroomScene");
                 }
+                else if (hit.transform.name == "SettingsButton")
+                {
+                    Debug.Log("Button pressed!");
+                    SceneManager.LoadScene("SettingsMenu");
+                }
+                else if (hit.transform.name == "QuitButton")
+                {
+                    Debug.Log("Button pressed!");
+                    Application.Quit();
+                }
             }
         }
         else if (Input.GetKeyDown(KeyCode.Escape))

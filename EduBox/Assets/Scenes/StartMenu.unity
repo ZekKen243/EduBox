@@ -773,7 +773,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1523,7 +1523,7 @@ GameObject:
   - component: {fileID: 1587545474482204037}
   - component: {fileID: 446556956}
   m_Layer: 0
-  m_Name: default
+  m_Name: SettingsButton
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1542,7 +1542,7 @@ GameObject:
   - component: {fileID: 1587545474786804146}
   - component: {fileID: 1167798849}
   m_Layer: 0
-  m_Name: default
+  m_Name: QuitButton
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
